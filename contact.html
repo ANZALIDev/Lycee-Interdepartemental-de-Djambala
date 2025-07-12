@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Lycée Interdépartemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- CONTACT -->
+  <section class="container">
+    <h2>📞 Contactez-nous</h2>
+
+    <div class="contact-info">
+      <p><strong>Adresse :</strong> Lycee Inter-Départemental de Djambala, Congo</p>
+      <p><strong>Téléphone :</strong> +242 06 968 65 50</p>
+      <p><strong>Email :</strong> lidd@.cg</p>
+      <p><strong>Réseaux sociaux :</strong></p>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+
+    <form class="contact-form" action="#" method="post">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </section>
+
+  <section class="container">
+    <h2>🗺️ Où nous trouver</h2>
+    <div class="map-container">
+      <iframe 
+        src="https://maps.google.com/maps?q=Djambala,+Congo&z=15&output=embed"
+        width="100%" height="300" frameborder="0" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

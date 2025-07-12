@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualités - Lycée Inter-Départemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="container">
+  <h2>📸 Galerie Photo</h2>
+  <div class="gallery">
+    <img src="img/event1.jpg" alt="Cérémonie 1">
+    <img src="img/event2.jpg" alt="Club Théâtre">
+    <img src="img/event3.jpg" alt="Débat inter-lycées">
+    <img src="img/event4.jpg" alt="Remise des prix">
+    <img src="img/event5.jpg" alt="Jardin du lycée">
+    <img src="img/event6.jpg" alt="Sport interclasse">
+    <img src="img/event7.jpg" alt="Cérémonie 1">
+    <img src="img/event8.jpg" alt="Club Théâtre">
+    <img src="img/event9.jpg" alt="Débat inter-lycées">
+    <img src="img/event10.jpg" alt="Remise des prix">
+    <img src="img/event11.jpg" alt="Jardin du lycée">
+    <img src="img/event12.jpg" alt="Sport interclasse">
+    <img src="img/event13.jpg" alt="Cérémonie 1">
+    <img src="img/event14.jpg" alt="Club Théâtre">
+    <img src="img/event15.jpg" alt="Débat inter-lycées">
+    <img src="img/event16.jpg" alt="Remise des prix">
+    <img src="img/event17.jpg" alt="Jardin du lycée">
+    <img src="img/event18.jpg" alt="Sport interclasse">
+    <img src="img/event19.jpg" alt="Cérémonie 1">
+    <img src="img/event20.jpg" alt="Club Théâtre">
+    <img src="img/event21.jpg" alt="Débat inter-lycées">
+    <img src="img/event22.jpg" alt="Remise des prix">
+    <img src="img/event23.jpg" alt="Jardin du lycée">
+    <img src="img/event24.jpg" alt="Sport interclasse">
+  </div>
+  </section>
+  <section class="container">
+  <h2>🎥 Galerie Vidéos</h2>
+  <div class="video-gallery">
+
+    <!-- Vidéo locale -->
+    <video controls>
+      <source src="videos/theatre.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+
+    <video controls>
+      <source src="videos/interclasses.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+
+    <video controls>
+      <source src="videos/discours.mp4" type="video/mp4">
+      Votre navigateur ne supporte pas la lecture vidéo.
+    </video>
+
+  </div>
+  </section>
+
+<script>
+  const openSettings = document.getElementById("open-settings");
+  const closeSettings = document.getElementById("close-settings");
+  const panel = document.getElementById("settings-panel");
+  const themeToggle = document.getElementById("theme-toggle");
+
+  openSettings.addEventListener("click", () => {
+    panel.style.display = "block";
+  });
+
+  closeSettings.addEventListener("click", () => {
+    panel.style.display = "none";
+  });
+
+  themeToggle.addEventListener("change", function () {
+    if (this.value === "dark") {
+      document.body.style.backgroundColor = "#111";
+      document.body.style.color = "#fff";
+    } else {
+      document.body.style.backgroundColor = "#fff";
+      document.body.style.color = "#000";
+    }
+  });
+
+  // Pour les langues, on pourra lier ça plus tard à un système de traduction
+</script>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

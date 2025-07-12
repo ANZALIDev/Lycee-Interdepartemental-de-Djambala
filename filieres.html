@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filières - Lycée Interdépartemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+    
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- SECTION FILIÈRES -->
+  <section class="container">
+    <h2>Filières et Programmes</h2>
+    <p>
+      Le Lycée Interdépartemental de Djambala propose trois grandes séries de formation en cycle terminal : la série A (littéraire), la série C (scientifique), et la série D (biologique). Chaque série prépare les élèves à des parcours universitaires adaptés à leur profil.
+    </p>
+
+    <div class="filiere">
+      <h3>🅰️ Série A — Littéraire</h3>
+      <p>
+        Cette série met l’accent sur les langues, la littérature, l’histoire, la géographie et la philosophie. Elle forme des esprits critiques et ouverts.
+      </p>
+      <ul>
+        <li>Matières dominantes : Français, Anglais, Histoire-Géographie, Philosophie</li>
+        <li>Profils adaptés : passionnés d’écriture, sciences humaines, droit, communication</li>
+        <li>Débouchés : journalisme, lettres, droit, sociologie, langues</li>
+      </ul>
+    </div>
+
+    <div class="filiere">
+      <h3>🅲 Série C — Scientifique (Maths-Physique)</h3>
+      <p>
+        Série d’excellence scientifique, elle s’adresse aux élèves aimant les mathématiques et les sciences physiques.
+      </p>
+      <ul>
+        <li>Matières dominantes : Mathématiques, Physique, Chimie</li>
+        <li>Profils adaptés : logiques, analytiques, rigoureux</li>
+        <li>Débouchés : ingénierie, informatique, mathématiques appliquées, architecture</li>
+      </ul>
+    </div>
+
+    <div class="filiere">
+      <h3>🅳 Série D — Sciences naturelles (Biochimie)</h3>
+      <p>
+        Idéale pour les élèves intéressés par la biologie, la nature, le vivant et la santé.
+      </p>
+      <ul>
+        <li>Matières dominantes : Biologie, Chimie, Mathématiques</li>
+        <li>Profils adaptés : observateurs, méthodiques, attirés par les sciences de la vie</li>
+        <li>Débouchés : médecine, biologie, agronomie, pharmacie</li>
+      </ul>
+    </div>
+  </section>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

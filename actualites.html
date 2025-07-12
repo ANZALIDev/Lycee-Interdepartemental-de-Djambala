@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actualités - Lycée Inter-Départemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- ACTUALITÉS -->
+  <section class="container">
+    <h2>📢 Articles</h2>
+    <section id="article-reception" class="carte-actu">
+      <h3>Reception des élèves au titre de l'année scolaire 2024-2025 🎓</h3>
+
+      <img src="img/reception.jpg" alt="Reception des élèves" class="img-article">
+
+      <div class="slider">
+        <img src="img/reception1.jpg" alt="Reception des élèves">
+        <img src="img/reception2.jpg" alt="Reception des élèves">
+        <img src="img/reception3.jpg" alt="Reception des élèves">
+        <img src="img/reception4.jpg" alt="Reception des élèves">
+        <video controls>
+          <source src="videos/reception1.mp4" alt="reception des élèves">
+          Votre navigateur ne supporte pas la vidéo
+        </video>
+        <video controls>
+          <source src="videos/reception2.mp4" alt="reception des élèves">
+          Votre navigateur ne supporte pas la vidéo
+        </video>
+        <video controls>
+          <source src="videos/reception3.mp4" alt="reception des élèves">
+          Votre navigateur ne supporte pas la vidéo
+        </video>
+      </div>
+      <article class="texte-article">
+        <p>Ce vendredi 16 septembre 2024, le Lycée Inter-Départemental de Djambala a officiellement lancé l’année scolaire 2024-2025 lors d’une cérémonie d’ouverture à la hauteur de ses valeurs : discipline, rigueur et quête d’excellence. Sous un ciel clément, élèves, professeurs et membres du personnel se sont réunis dans la cour centrale pour partager un moment à la fois symbolique et motivant.
+Un accueil empreint de solennité
+La cérémonie a débuté à 7h30 précises. Le proviseur, entouré de son équipe administrative, a pris la parole dans un silence respectueux. D’un ton ferme mais bienveillant, il a rappelé les fondements pédagogiques de l’établissement.
+> « Ici, nous n’enseignons pas seulement des savoirs. Nous façonnons des personnalités, nous élevons des consciences. La rigueur est notre boussole, la discipline notre chemin, et l’excellence notre horizon », a-t-il déclaré avec conviction.</p>
+
+<p>Le discours a été suivi d’une présentation des différentes composantes de l’administration, chacune réaffirmant son engagement envers l’encadrement, le soutien et le suivi des élèves.
+
+Une atmosphère d’ambition partagée
+
+Les anciens élèves ont salué la continuité et la cohérence d’un encadrement qu’ils connaissent bien, tandis que les nouveaux découvraient avec curiosité l’environnement qui deviendra leur seconde maison pour les mois à venir.
+
+Deux nouveaux visages, deux premières impressions</p>
+
+<p>Nous avons tendu le micro à deux nouveaux venus, fraîchement inscrits en classe de seconde, pour recueillir leurs premières impressions.</p>
+
+<p> David N., 15 ans, tout juste arrivé du collège Mont Kamba, confie :</p>
+
+> « J’ai été frappé par l’organisation dès l’entrée. On sent que rien n’est laissé au hasard. C’est impressionnant, mais ça donne aussi envie de bien faire.»</p>
+
+<p>Samantha M., 16 ans, venue d’un autre établissement de la ville, ajoute avec un sourire timide :</p>
+
+<p>> « Le discours du proviseur m’a donné des frissons. On comprend tout de suite qu’on est dans un lycée où l’avenir se prépare sérieusement.»</p>
+
+<p>Cap vers une année prometteuse</p>
+
+<p>Au terme de la cérémonie, les élèves ont regagné leurs salles dans un ordre exemplaire. Le message est clair : la réussite ne sera pas une option, mais une mission partagée.
+
+Dans les couloirs comme dans les esprits, une certitude s’est installée : l’année 2024-2025 s’annonce exigeante, mais riche en promesses.
+</p>
+      </article>
+    </section>
+  </section>
+
+<script>
+  const openSettings = document.getElementById("open-settings");
+  const closeSettings = document.getElementById("close-settings");
+  const panel = document.getElementById("settings-panel");
+  const themeToggle = document.getElementById("theme-toggle");
+
+  openSettings.addEventListener("click", () => {
+    panel.style.display = "block";
+  });
+
+  closeSettings.addEventListener("click", () => {
+    panel.style.display = "none";
+  });
+
+  themeToggle.addEventListener("change", function () {
+    if (this.value === "dark") {
+      document.body.style.backgroundColor = "#111";
+      document.body.style.color = "#fff";
+    } else {
+      document.body.style.backgroundColor = "#fff";
+      document.body.style.color = "#000";
+    }
+  });
+
+  // Pour les langues, on pourra lier ça plus tard à un système de traduction
+</script>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

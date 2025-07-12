@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Anciens Élèves - Lycée Interdépartemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- ANCIENS ÉLÈVES -->
+  <section class="container">
+    <h2>Success Stories</h2>
+
+    <div class="ancien">
+      <img src="img/anciens/emmanuel-anzali.jpg" alt="Emmanuel ANZALI">
+      <div>
+        <h3>Emmanuel ANZALI</h3>
+        <p>Ancien élève de la série A, promotion 2024. Aujourd’hui ingénieur en intelligence artificielle au Canada, et PDG de BongiSpace.</p>
+      </div>
+    </div>
+
+    <div class="ancien">
+      <img src="img/anciens/tebele.jpg" alt="Joëldie TEBELE">
+      <div>
+        <h3>Joëdie TEBELE</h3>
+        <p>Ancienne élève de la série A, elle est désormais avocate internationale et militante pour l'éducation des filles en Afrique centrale.</p>
+      </div>
+    </div>
+
+    <div class="ancien">
+      <img src="img/anciens/christopher-goma ngoma.jpg" alt="Chistopher GOMA NGOMA">
+      <div>
+        <h3>Christopher GOMA NGOMA</h3>
+        <p>Entrepreneur tech, fondateur de l'application "Setting's House", Christopher est diplômé du LIDD en série A (2024).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Témoignages</h2>
+
+    <blockquote>
+      « Le LIDD est bien plus qu’un lycée. C’est un creuset de passion et de dépassement de soi. »
+      <br>– Emmanuel ANZALI, promo 2024
+    </blockquote>
+
+    <blockquote>
+      « Les valeurs du LIDD m’accompagnent chaque jour dans mon métier d'entrepreneur. »
+      <br>– Christopher GOMA NGOMA, promo 2024
+    </blockquote>
+    
+    <blockquote>
+      « Courage aux filles!! il faut lutter pour prouver que vous avez votre place. »
+      <br>– Joëldie TEBELE, promo 2024
+    </blockquote>
+  </section>
+
+  <section class="container">
+    <h2>Rejoindre l’annuaire</h2>
+    <p>Vous êtes ancien élève ? Contribuez à la mémoire collective du LIDD en vous inscrivant à notre annuaire officiel (section à venir).</p>
+    <p>📧 Contactez-nous à : <strong>anciens@lidd.cg</strong></p>
+  </section>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

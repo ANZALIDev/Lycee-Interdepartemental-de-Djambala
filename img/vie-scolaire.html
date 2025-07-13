@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vie Scolaire - Lycée Interdépartemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- VIE SCOLAIRE -->
+
+  <section class="container calendrier">
+    <section id="calendrier" class="carte-calendrier">
+      <div class="cards-container">
+        <div class="calendrier-card">
+          <h2 id="calendrier_title">Calendrier scolaire 📅</h2>
+          <p id="calendrier_msg">
+          <ul>
+            <li>📌 Rentrée scolaire : 02 octobre 2025</li>
+            <li>📌 Vacances de Noël : 20 décembre – 5 janvier</li>
+            <li>📌 Examens blancs : mars 2026</li>
+            <li>📌 Baccalauréat : juin 2026</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container project">
+    <section id="project" class="carte-project">
+      <div class="cards-container">
+        <div class="project-card">
+          <h2 id="project_title">Projets des élèves</h2>
+          <p id="project_msg">Les élèves du LID réalisent chaque année des projets originaux : mini-films, journaux scolaires, enquêtes historiques, podcasts, etc.</p>
+          <blockquote style="margin: 15px 0; color: #555; font-style: italic;">« Ce lycée m’a appris à croire en mes idées. Le club de théâtre m’a permis de prendre la parole en public. » – Grâce, 1re D
+          </blockquote>
+          <a href="project.html" class="btn-voir-plus">Voir plus</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- ARCHIVE -->
+  <section class="container archive">
+    <section id="archive" class="carte-archive">
+      <div class="cards-container">
+        <div class="archive-card">
+          <h2 id="archive_title">Archives</h2>
+          <p id="archive_msg">Consultez les anciens bulletins d’info, programmes d’événements, et témoignages d’anciens élèves dans notre espace archives (à venir).</p>
+          <a href="archive.html" class="btn-voir-plus">Voir plus</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="container">
+    <h2>Activités Extrascolaires</h2>
+    <p>
+      Le lycée encourage les élèves à développer leurs talents à travers diverses activités :
+    </p>
+    <ul>
+      <li>🎤 Club d’éloquence et débat</li>
+      <li>🎨 Club artistique (dessin, peinture, musique)</li>
+      <li>⚽ Équipes sportives : football, handball, athlétisme</li>
+      <li>💡 Club science et innovation</li>
+      <li>🌿 Projet éco-citoyen (jardinage, recyclage)</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Associations d’élèves</h2>
+    <p>
+      Des associations étudiantes dynamiques permettent aux élèves de s’impliquer activement dans la vie de l’établissement :
+    </p>
+    <ul>
+      <li>📘 Conseil des délégués</li>
+      <li>📢 Comité de la culture</li>
+      <li>🎭 Troupe théâtrale du LID</li>
+      <li>🧬 Club santé & bien-être</li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Résidences / Internat</h2>
+    <p>
+      Le lycée dispose d’un internat mixte, encadré par une équipe éducative vigilante et bienveillante. Les chambres sont partagées, les dortoirs bien entretenus, et les élèves participent à des veillées éducatives.
+    </p>
+    <p>
+      La vie résidentielle favorise l’autonomie, l’entraide et la rigueur quotidienne. Des activités de cohésion sont organisées chaque mois (soirées à thème, ciné-débats, compétitions internes...).
+    </p>
+  </section>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+    <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>

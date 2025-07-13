@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Présentation - Lycée Interdépartemental de Djambala</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.png">
+</head>
+<body>
+
+<header style="background-image: url('img/header-bg.jpeg'); background-size: cover; background-position: center;">
+  <div class="container header-content">
+    <img src="img/logo.png" alt="Logo Lycée" class="logo">
+    <div>
+      <h1 id="site_title">Lycée Inter-Départemental de Djambala</h1>
+      <p id="site_slogan" class="slogan">Former l’esprit, c'est construire l’avenir</p>
+    </div>
+
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div><div></div><div></div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="filieres.html">Filières</a></li>
+        <li><a href="vie-scolaire.html">Vie scolaire</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="anciens-eleves.html">Anciens</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+        <li><a href="#" id="open-settings">⚙ Paramètres</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <!-- SECTION HISTORIQUE -->
+  <section id="localisation" class="carte-historique">
+      <h2 id="historique_title">Historique</h2>
+          <div class="slider">
+            <img src="img/historique.jpg" alt="Photo historique">
+            <img src="img/historique1.jpg" alt="Photo historique1">
+            <img src="img/historique2.jpg" alt="Photo historique2">
+          </div>
+          <blockquote id="historique_msg" style="font-style: italic; color: #666; margin: 10px 0 20px 0;">Le Lycée Interdépartemental de Djambala, fondé en 2013, est un établissement public à vocation régionale, rassemblant des élèves venus de tous les départements du Congo. Conçu pour répondre aux besoins d’excellence académique, il s’est imposé comme un pôle éducatif de référence au fil des années.</blockquote>
+            <p class="signature" id="proviseur_nom">— M. Jean Adelard MPAKA, Proviseur</p>
+  </section>
+
+  <!-- SECTION LOCALISATION -->
+  <section class="container localisation">
+    <section id="localisation" class="carte-localisation">
+      <h2 id="localisation_title">Localisation</h2>
+      <div class="cards-container">
+        <div class="localisation-card">
+          <p>Le lycée est situé à Djambala, chef-lieu du département des Plateaux, dans un environnement naturel propice à l’étude, entouré de collines et de verdure. Il bénéficie d’un climat tempéré et d’un accès facile via la route départementale.</p>
+          <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=Djambala,+Congo&z=15&output=embed" width="100%" height="300" frameborder="0" allowfullscreen> </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- SECTION ÉQUIPE ÉDUCATIVE -->
+  <section class="container equipe-educative">
+    <section id="equipe-educative" class="carte-equipe-educative">
+      <h2 id="equipe-educative_title">Équipe éducative</h2>
+      <div class="cards-container">
+        <div class="equipe-educative-card">
+          <p id="equipe-educative_msg">L'équipe pédagogique du LIDD est composée d’enseignants expérimentés, engagés dans la transmission des savoirs et le développement des compétences des élèves. Elle est renforcée par le personnel administratif, de vie scolaire et de service.</p>
+          
+          <a href="equipe.html" class="btn-voir-plus">Voir toute l'équipe</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- SECTION VALEURS ET MISSION -->
+  <section class="container valeur&mission">
+    <section id="valeur-mission" class="carte-valeur-mission">
+      <h2 id="valeur-mission_title">Valeurs & Mission</h2>
+      <div class="cards-container">
+        <div class="valeur-mission-card">
+          <p id="valeur-mission_msg">Le Lycée Interdépartemental de Djambala repose sur quatre piliers fondamentaux :</p>
+          <ul>
+            <li>🎓 L’Excellence scolaire</li>
+            <li>📚 La Discipline et le Respect</li>
+            <li>🧠 L’Ouverture intellectuelle et citoyenne</li>
+            <li>🌱 La Formation intégrale de l’élève, dans l’éthique et la responsabilité</li>
+          </ul>
+          <p>Sa mission est de former les cadres de demain, conscients de leur rôle dans la société congolaise, et prêts à relever les défis de leur époque.</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+<div class="settings-panel" id="settings-panel" style="display:none">
+  <h3 id="param_title">⚙️ Paramètres</h3>
+
+  <label for="lang-select" id="param_lang">🌐 Langue </label>
+  <select id="lang-select">
+    <option value="fr">Français</option>
+    <option value="en">English</option>
+    <option value="es">Spanish</option>
+
+  </select>
+  <label for="theme-toggle" id="param_theme">🎨 Thème :</label>
+  <select id="theme-toggle">
+    <option value="light">Clair</option>
+    <option value="dark">Sombre</option>
+  </select>
+
+  <button id="close-settings" class="btn-close">Fermer</button>
+</div>
+<script src="js/settings.js"></script>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Lycée Interdépartemental de Djambala. Tous droits réservés.</p>
+    </div>
+  </footer>
+  
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const navbar = document.getElementById('navbar').querySelector('ul');
+
+  toggle.addEventListener('click', () => {
+    navbar.classList.toggle('show');
+  });
+  </script>
+  
+</body>
+</html>
